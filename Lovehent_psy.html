@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovehent - AFO-PSY-004</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Special+Elite&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 
+            NOTA: não sei se eu publico isso, talvez apenas publique como imagem... sei lá, seria legal publicar e deixar como uma surpresa... espero que meus amores gostem, sério
+        */
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+            font-family: 'Special Elite', monospace;
+        }
+
+        .manga-page {
+            width: 768px;
+            min-height: 1344px;
+            background-color: #e8e4d8;
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.05) .1em, transparent .1em), 
+                linear-gradient(90deg, rgba(0,0,0,0.05) .1em, transparent .1em);
+            background-size: 2em 2em;
+            border: 4px solid #000;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+            padding: 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            position: relative;
+        }
+
+        .stamp {
+            position: absolute;
+            font-family: 'Bangers', cursive;
+            color: #c00000;
+            border: 5px solid #c00000;
+            padding: 5px 15px;
+            font-size: 5rem;
+            transform: rotate(-10deg);
+            opacity: 0.8;
+            letter-spacing: 5px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .stamp.top-secret {
+            top: 50px;
+            left: 40px;
+        }
+
+        .stamp.eyes-only {
+            position: fixed;
+            bottom: 40px;
+            right: 60px;
+            font-size: 4rem;
+            transform: rotate(5deg);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px double #333;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Bangers', cursive;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            color: #222;
+        }
+
+        .panel {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 2px solid #333;
+            padding: 20px;
+            box-shadow: 5px 5px 0px #aaa;
+        }
+        
+        .panel.image-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #d1ccc0;
+        }
+
+        .watch-drawing {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #333 0%, #000 70%);
+            border: 10px solid #444;
+            position: relative;
+            box-shadow: inset 0 0 20px #000, 0 0 10px #000;
+        }
+        .watch-drawing::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 180px;
+            height: 180px;
+            margin-top: -90px;
+            margin-left: -90px;
+            
+            background-image: repeating-conic-gradient(#E4007C 0% 2.5%, #000 2.5% 5%);
+            border-radius: 50%;
+            animation: spin 8s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+
+        .panel h2 {
+            font-family: 'Bangers', cursive;
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        .panel p, .panel ul {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: #111;
+            margin: 0;
+        }
+        
+        .panel ul {
+            padding-left: 25px;
+            list-style-type: square;
+        }
+
+        .panel li {
+            margin-bottom: 15px;
+        }
+        
+        .redacted {
+            background-color: #000;
+            color: #000;
+            user-select: none;
+            padding: 0 5px;
+        }
+
+        .warning {
+            color: #c00000;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="manga-page">
+
+        <div class="stamp top-secret">CLASSIFIED</div>
+        <div class="stamp eyes-only">EYES ONLY</div>
+
+        <div class="header">
+            <h1>HERO PUBLIC SAFETY COMMISSION // EYES ONLY<br>CASE FILE: AFO-PSY-004</h1>
+        </div>
+
+        <div class="panel image-panel">
+            <h2>Item Designation: AFO-PSY-004</h2>
+            <p style="margin-bottom: 20px;"><strong>Known Alias: "The Whisper Watch"</strong></p>
+            <div class="watch-drawing"></div>
+            <p style="margin-top: 20px;">Rendition. Appearance is discreet, but the face emits a faint, pulsating light with a shifting hypnotic spiral in hues of <strong style="color:#E4007C;">magenta</strong> and black.</p>
+        </div>
+
+        <div class="panel">
+            <h2>Mechanism of Action: The Effect</h2>
+            <p>This device is NOT a conventional mind-control Quirk. It does not implant commands. It operates on a more sinister level of psychological manipulation by amplifying a victim's most deeply suppressed thoughts.
+            <br><br>
+            It takes a fleeting impulse, a dark desire, a hidden fetish, a flicker of envy and turns it into an irresistible, all-consuming urge. The victim acts on this urge believing it is their own "true self" breaking free. They become the willing agent of their own public disgrace, making the psychological trauma permanent and profound.</p>
+        </div>
+
+        <div class="panel">
+            <h2>Threat Analysis: Weaponized Humiliation</h2>
+            <p>The device is a tool for social and psychological annihilation. Its true horror lies in its ability to expose and weaponize the most private aspects of a person's psyche. Potential applications include:</p>
+            <ul>
+                <li><strong>Public Indecency:</strong> Target a hero famous for their pure, chaste public image. The device could amplify a repressed sexual curiosity, causing them to make intensely inappropriate and suggestive advances towards a villain on a live news broadcast, destroying their reputation in minutes.</li>
+                <li><strong>Intimacy Sabotage:</strong> A target in a stable relationship harbors a secret, mild sexual fantasy they are too shy to share. The device can amplify this into an aggressive, public demand, humiliating their partner and shattering the trust and privacy of their relationship forever.</li>
+                <li><strong>Weaponized Fetishes:</strong> A respected politician with a harmless, completely private foot fetish could be influenced to act on it during a diplomatic summit. The resulting viral footage would mean instant career and social suicide. It turns a harmless private quirk into a life-destroying public spectacle.</li>
+                <li><strong class="warning">CASE STUDY - POTENTIAL TARGET: INKO MIDORIYA:</strong> While less sexual, the principle remains. AFO could twist her maternal love into a pathological obsession. She could be induced to create public scenes, attempt to sabotage her son's gear "for his own good," or sell fabricated, embarrassing childhood stories to tabloid media. This forces Deku to fight not a villain, but a weaponized version of his own mother's love, a uniquely cruel psychological attack.</li>
+            </ul>
+        </div>
+        
+        <div class="panel">
+            <h2>Countermeasures & Conclusion</h2>
+            <p>Extreme mental discipline offers a potential defense, but no individual is completely free of latent desires or insecurities. Everyone is a potential target. The belief that "I would never do that" is the very vulnerability the device exploits.
+            <br><br>
+            <strong class="warning">CONCLUSION:</strong> AFO-PSY-004 is a weapon of soul-destroying terror. It doesn't break the body; it makes the mind betray itself. Its neutralization is a top-tier priority. <span class="redacted">All related intel classified under Project Pandora.</span></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
